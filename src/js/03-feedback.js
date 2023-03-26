@@ -7,6 +7,7 @@ const message = document.querySelector('.feedback-form textarea');
 form.addEventListener('submit', onFormSubmit);
 form.addEventListener('input', throttle(onFormDate, 500));
 
+storageData();
 const formData = {};
 
 function onFormDate(evt){
@@ -33,4 +34,3 @@ function storageData(){
     };
 };
 
-storageData();
